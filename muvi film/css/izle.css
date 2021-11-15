@@ -1,0 +1,264 @@
+
+body{
+     margin: 0px;
+     padding: 0px;
+     background-color: #000000;
+}
+*{
+     box-sizing: border-box;
+}
+.sayfa{
+     width: 86%;
+     margin: 0 auto;
+     background-color: white;
+}
+.anabaslik h1{
+    font-size: 3rem;
+    display: flex;
+    font-family:"Courier New", Courier, monospace;
+    letter-spacing: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+.menu {
+     width: 100%;
+     margin: 0 auto;
+     overflow: hidden;
+     background-color: rgb(179, 90, 31);
+}
+.menu ul{
+     text-align: center;
+     margin: 0px;
+     padding: 0px;
+}
+.menu li{
+     list-style-type: none;
+     display: inline;
+     display: inline-block;
+}
+
+.menu a { 
+     align-items: center;
+     font-size: 1.5rem;           
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+.menu a:hover {
+     background-color: #ddd;
+     color: black;
+}
+.icerik{
+    display: flex;
+}
+.sol{
+     width: 20%;
+     float: left;
+     padding: 10px;
+}
+.sol h2{
+     display: flex;
+     margin-bottom: 1rem;
+     align-items: center;
+     font-size: 2.5rem;
+     
+}
+.sol p{
+     line-height: 3rem;
+     font-size: 2rem;
+     display: flex;
+     
+}
+.sag{
+    width: 20%;
+     float: right;
+     padding: 10px;
+}
+.sag h2{
+     display: flex;
+     align-items: center;
+     margin-bottom: 1rem;
+     font-size: 2.5rem;
+}
+.sag p{
+     font-size: 2rem;
+     text-indent: 1rem;
+}
+.video-orta{
+    flex-direction: column;
+     width: 60%;
+     height: 100%;
+     float: left;
+     padding: 0;
+     background-color: rgb(0, 0, 0);
+}
+.video-orta video{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 100%;
+    background-size: contain;
+}
+
+.alt {
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     padding: 10px;
+     text-align: center;
+}
+.alt p{
+     font-size: 2rem;
+     font-family: cursive;
+}
+.yorum h1{
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: white;
+     margin: 10rem 0 0 0;
+     padding: 10px ;
+     background-color: #b45700;
+}
+/* */
+.last{
+     display: flex;
+     width: 100%;
+     height: 90%;
+     background-color: black;
+ 
+ }
+ .last .yorumlar{
+     display: flex;
+     align-items: center;
+     margin: 0 0;
+     width: 100%;
+     padding: 5%;
+     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0,0,0,0.3)),
+        url(images/gf.gif) center no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 68vh;
+     background-color: rgb(146, 140, 131);
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+ }
+ .yorumlar h1{
+     color: rgb(184, 160, 143);
+     margin-bottom: 2rem;
+     font-size: 3rem;
+     letter-spacing: 2rem;
+     text-indent: 2rem;
+     border-bottom: 2rem;
+     border-radius: 1rem;
+     background-color: white;
+ }
+ .input-group{
+     position: relative;
+ }
+ .field{
+     width: 30rem;
+     background-color: transparent;
+     border: none;
+     border-bottom: 0.4rem solid #b45700;
+     margin: 3rem 0;
+     padding: 1rem 1rem 1rem 0;
+     font-family: "Muli",serif;
+     font-size: 2rem;
+     color: rgb(255, 255, 255);
+ 
+ }
+ .input-group input{
+     height: 3rem;
+ }
+ .input-group textarea{
+     max-height: 6rem;
+     max-width: 30rem;
+ }
+ .field:focus{
+     border-bottom: rgb(255, 255, 255) solid;
+ }
+ .input-group label{
+     position: absolute;
+     left: 0;
+     font-family: "Baloo Da 2",serif;
+     font-size: 1.5rem;
+     margin-bottom: 0.8rem;
+     color: rgb(255, 255, 255);
+     text-transform: uppercase;
+     font-weight: 700;
+     pointer-events: none;
+     transition: all 0.3s;
+ }
+ .input-label{
+     bottom:3rem;
+ }
+ .message{
+     bottom: 4rem;
+ }
+ .field:focus ~label{
+     transform: translateY(-4rem);
+     font-size: 0.8rem;
+ }
+ form{
+     align-items: center;
+ }
+ .buton{
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 5rem;
+ }
+ .buton:hover{
+     transform: scale(1.3);
+ }
+ .yorumlar .submit-btn{
+     align-items: center;
+     width: 20rem;
+     height: 4rem;
+     background-color: rgb(255, 255, 255);
+     color: black;
+     border: none;
+     margin-top: 2rem;
+     font-family: "Muli",serif;
+     font-size: 2rem;
+     font-weight: 300;
+     text-transform: uppercase;
+     letter-spacing: 0.2rem;
+     cursor: pointer;
+ }
+@media screen and (max-width:768px){
+     .sol h2{
+          font-size: 1.5rem;
+     }
+     .sol p{
+          line-height: 20px;
+          font-size: 1.3rem;
+     }
+     .sag h2{
+          font-size: 1.5rem;
+     }
+     .sag p{
+          font-size: 1.3rem;
+          line-height: normal;
+     }
+     .alt p{
+          font-size: 1rem;
+     }
+     .yorum h1{
+          font-size: 1.4rem;
+     }
+}

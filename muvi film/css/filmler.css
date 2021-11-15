@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Da 2", serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    background-color: black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.navbar-icon{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+}
+
+.navbar-icon:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.open-navbar-icon{
+    position: fixed;
+    top: 6.5rem;
+    left: 6.5rem;
+    z-index: 200; 
+
+}
+.navbar-icon .line{
+    height: 0.2rem;
+    width: 3.5rem;
+    background-color: #777;
+}
+.open-navbar-icon .line{
+    margin: 0.3rem 0;
+}
+.navbar-wrapper{
+    width: 100.2vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(225,225,225,0.7);
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    opacity: 0;
+    z-index: 300;
+    padding: 3.5rem 5.5rem 3.5rem 3.5rem;
+    transition: bottom 0.7s, opacity 0.2s;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),
+       url(images/arabalar.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; 
+}
+.change .navbar-wrapper{
+    bottom: 0;
+    opacity: 1;
+    transition: top 0.5s, opacity 1s 0.3s;
+
+}
+.close-navbar-icon{
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+    z-index: 300;
+
+}
+.close-navbar-icon .line{
+    position: absolute;
+}
+.line-1{
+    transform: rotate(40deg);
+}
+.line-2{
+    transform: rotate(-40deg);
+}
+.nav-list{
+    height: 100%;
+    display: flex;
+}
+.nav-link{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    opacity: 0.8;
+    color: white;
+    position: relative;
+    top: -100%;
+    transition: all 0.3s;
+}
+.change .nav-link{
+    top: 0;
+}
+.nav-link:hover{
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.change .nav-link:nth-child(1){
+    transition: top 1s 0.4s;
+}
+.change .nav-link:nth-child(2){
+    transition: top 1s 0.6s;
+}
+.change .nav-link:nth-child(3){
+    transition: top 1s 0.8s;
+}
+.change .nav-link:nth-child(4){
+    transition: top 1s 1s;
+}
+.change .nav-link:nth-child(5){
+    transition: top 1s 1.2s;
+}
+.onizleme{
+    width: 100%;
+    height: 100%;
+}
+video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: contain;
+}
+.card {
+    margin: 5rem 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input{
+    width:200px;
+    height:30px;
+    background:#ccc;
+    border:none;
+    border:1px solid gray;
+    border-radius:15px;
+    padding-left:10px;
+    outline:none;
+    transition:width 0.5s ease;
+  }
+  
+  input:focus{
+    width:300px;
+  }
+.icerik {
+    position: absolute;
+    transition: color 1s ease-in;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    display: table;
+    height: 107.5%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 70%;
+    text-align:center;
+} 
+
+.icerik section{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+   
+.icerik h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.icerik p{
+    margin: 4rem 5rem 0 5rem;
+    color: black;
+    font-size: 2rem;
+    background-color: rgb(209, 137, 110);
+}
+@media screen and (max-width:768px){
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+         
+    }
+    .nav-list a{
+        margin-bottom: 0;
+        height: 20vh;
+    }
+    .orta{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:840px){
+    .orta{
+        display: flex;
+    }
+    
+}
+
+
+@media screen and (max-width: 1510px){
+    .onizleme{
+        display: none;
+    }
+    .icerik{
+        display: none;
+    } /* sadece tam ekrandayken videoyu göstermesi için  böyle yaptım. */
+}
+
+.baslik-f{ 
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 20% 2rem 20%;
+    background-color: white;
+    
+    
+}
+.baslik-f h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2rem;
+    margin: 0 30% 0 30%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: cursive;
+    box-sizing: border-box;
+
+}
+
+.baslik-d{
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 20% 2rem 20%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+
+}
+
+.baslik-d h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    initial-letter: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-weight: 300;
+    margin: 0 30% 0 30%;
+    box-sizing: border-box;
+
+}
+.orta{
+    width: 90%;
+    margin: 6rem 5% 0 5%;
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+
+    
+}
+
+.orta .orta-icerik{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
+.orta-icerik .bir-icerik{
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.bir-icerik img{
+    width: 95%;
+    height: 140px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+.bir-icerik img:hover{
+  opacity: 1;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+}
+.orta-icerik .bir-icerik h3{
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-left: 0;
+}
+
+
