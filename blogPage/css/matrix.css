@@ -1,0 +1,261 @@
+.header_bloger{
+    padding-top: 8%;
+    padding-left: 20%;
+    display: flex;
+    justify-content: start;
+    height: 20rem;
+    width: 100%;
+    background-color: black;
+    
+}
+.img_bloger img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0;   
+    
+}
+.banner_bloger{
+    display: flex;
+    flex-direction: column;
+    color: blanchedalmond;
+    padding: 5px 30px;
+    line-height: 2rem;
+}
+.banner_bloger button{
+    cursor: pointer;
+}
+.metin{
+    line-height: 1.3rem;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5rem 10rem 5rem 10rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.baslik h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding-bottom: 1.8rem;
+    color: wheat;
+}
+h3{
+    font-size: 1.5rem;
+}
+.yazı p{
+    display: flex;
+    font-size: 1.1rem;
+    text-indent: 1.5rem;
+    padding-bottom: 3rem;
+}
+.ses{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+.video_part{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 20rem;
+}
+.metin h3{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.contact{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
+}
+.contact-wrapper{
+    width: 60%;
+    height: 45rem;
+    display: flex;
+}
+.contact-left {
+    display: flex;
+    width: 35%;
+    background: linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22,0.9));
+    background-size: initial;
+}
+.contact-wrapper .contact-left img{
+    border: double 0.6rem;
+    border-color: rosybrown;
+}
+.contact-right{
+    width: 65%;
+    background-color: rosybrown;
+    padding: 2rem 6rem 6rem 8rem;
+}
+.contact-heading{
+    font-family: "Baloo Da 2",serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.contact-right form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    width: 30rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem double #000000;
+    margin: 3rem 0;
+    padding: 1rem 1rem 1rem 0;
+    font-family: "Muli",serif;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+
+}
+.input-group input{
+    height: 3rem;
+}
+.input-group textarea{
+    max-height: 6rem;
+    max-width: 30rem;
+}
+.field:focus{
+    border-bottom: rgb(255, 255, 255) solid;
+}
+.input-group label{
+    position: absolute;
+    left: 0;
+    font-family: "Baloo Da 2",serif;
+    font-size: 1.4rem;
+    color: rgb(109, 68, 14);
+    text-transform: uppercase;
+    font-weight: 700;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.input-label{
+    bottom:3rem;
+}
+.message{
+    bottom: 6rem;
+}
+.field:focus ~label{
+    transform: translateY(-4rem);
+    font-size: 0.8rem;
+}
+.submit-btn{
+    width: 45rem;
+    height: 5rem;
+    background-color: slategray;
+    color: snow;
+    border: none;
+    margin-top: 2rem;
+    font-family: "Muli",serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+.video_part video{
+    border: double 0.5rem;
+    border-color: wheat;
+}
+@media(max-width:1000px){
+    .video_part video{
+        width: 45rem;
+    }
+    .contact-left{
+        width: 40%;
+
+    }
+    .contact-right{
+        width: 60%;
+    }
+    .contact-right h1{
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+    .field{
+        width: 15rem;
+    }
+}
+
+@media(max-width:800px){
+    .video_part video{
+        width: 30rem;
+    }
+    .contact-left{
+        width: 40%;
+
+    }
+    .contact-right{
+        width: 60%;
+    }
+    .contact-right h1{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .field{
+        width: 12rem;
+    }
+}
+
+@media(max-width: 500px){
+    .metin{
+        padding: 5rem 4rem 5rem 4rem;
+        display: flex;
+
+    }
+    .baslik h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .yazı h3{
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        display: flex;
+        justify-content: center;
+    }
+    .yazı p{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        display: flex;
+        justify-content: center;
+      
+    }
+    .video_part video{
+        width: 28rem;
+    }
+    .contact-left{
+        width: 40%;
+
+    }
+    .contact-right{
+        width: 60%;
+    }
+    .contact-right h1{
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    .field{
+        width: 12rem;
+    }
+}
+

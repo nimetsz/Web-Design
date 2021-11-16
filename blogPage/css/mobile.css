@@ -1,0 +1,16 @@
+#navbar{
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow: hidden; /*taşarsa göstermesin*/
+    height: 80px;
+}
+.konular_orta{
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    justify-content: center;
+    padding-left: 30px 20px;   
+
+}
